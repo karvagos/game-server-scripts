@@ -3,10 +3,10 @@
 #include "SharedDefines.h"
 #include "Unit.h"
  
-class v6_dynamic_xp_class : UnitScript
+class v6_dynamic_xp_class : PlayerScript
 {
 public:
-    v6_dynamic_xp_class() : UnitScript("v6_dynamic_xp") {}
+    v6_dynamic_xp_class() : PlayerScript("v6_dynamic_xp") {}
  
     void OnGiveXP(Player* player, uint32& amount, Unit* /*unit*/) override
     {
