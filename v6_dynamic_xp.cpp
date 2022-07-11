@@ -10,7 +10,7 @@ public:
  
     void OnGiveXP(Player* player, uint32& amount, Unit* /*unit*/) override
     {
-        if(player->GetLevel() <= 5){
+        if(player->GetLevel() <= 10){
             amount *= 2;
         }
         else if(player->GetLevel() <= 20){
